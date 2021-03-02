@@ -34,6 +34,7 @@ import blue from "@material-ui/core/colors/blue";
 import grey from "@material-ui/core/colors/grey";
 import logo from "./logo.svg";
 import logo2 from "./logo2.jpg";
+import sendEmail from "./sendgrid"
 import "./App.css";
 
 const appTheme = createMuiTheme({
@@ -94,6 +95,7 @@ function GridPerson({ person }) {
 
   const handleClose = name => {
     console.log(name);
+    sendEmail();
     setOpen(false);
   };
 
