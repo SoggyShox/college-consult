@@ -101,6 +101,16 @@ function GridPerson({ person }) {
 
   const [connectButtonOpen, setConnectButtonOpen] = React.useState(false);
 
+  // const onParentConnectSubmit = () => {
+  //   // send API call to Express app to send out Sengrid follow up email
+
+  //   // 1. college student name
+  //   // 2. the submitter's email
+  //   // 3. submitter's Name
+
+  //   // pass stuff into express 
+  // }
+
   const connectButtonHandleOpen = () => {
     setConnectButtonOpen(true);
   };
